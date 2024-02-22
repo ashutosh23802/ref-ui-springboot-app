@@ -76,7 +76,6 @@ HELP.md
 ./frontend/.DS_Store
 ./frontend/Thumbs.db
 
-backend/HELP.md
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
