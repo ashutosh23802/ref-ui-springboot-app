@@ -1,0 +1,4 @@
+allprojects {
+    group = 'org.tiaa.referencedata'
+    version = '0.0.1-SNAPSHOT'
+}

@@ -1,0 +1,3 @@
+rootProject.name = 'ref-ui-springboot-app'
+
+include 'backend', 'frontend'
