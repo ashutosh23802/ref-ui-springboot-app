@@ -1,0 +1,22 @@
+// 1
+plugins {
+  id 'java'
+  id "com.github.node-gradle.node" version "3.1.1"
+}
+
+// 2
+node {
+  version = '18.15.0'
+  download = true
+}
+
+
+task copyArtifact(type: Copy){
+  from('dist/frontend/browser/')
+  into('../backend/src/main/resources/static')
+}
+
+
+// 3
+jar.dependsOn 'npm_run_build'
+jar.dependsOn 'copyArtifact'
